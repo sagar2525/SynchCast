@@ -1,0 +1,171 @@
+[Version]
+
+Signature = "$WINDOWS NT$"
+Class = MEDIA
+Provider = %VendorName%
+ClassGUID = {4d36e96c-e325-11ce-bfc1-08002be10318}
+DriverVer = 03/02/2023, 4.70.0.13051
+CatalogFile = vrtaucbl.cat
+
+
+
+[Manufacturer]
+
+%VendorName% = DevSection, NTx86, NTamd64, NTarm64
+
+
+
+[DevSection.NTx86]
+
+%DeviceName% = DevInst, %HardwareId%
+
+
+
+[DevSection.NTamd64]
+
+%DeviceName% = DevInst, %HardwareId%
+
+
+
+[DevSection.NTarm64]
+
+%DeviceName% = DevInst, %HardwareId%
+
+
+
+[DevInst.NT]
+
+Include = ks.inf, wdmaudio.inf
+Needs = KS.Registration, WDMAUDIO.Registration
+CopyFiles = DevInst.DriverModules
+AddReg = DevInst.AddReg
+AddProperty = DevInst.Properties
+
+
+
+;#####################################################################
+;
+; Services
+; ========
+;
+;#####################################################################
+
+
+
+[DevInst.NT.Services]
+
+AddService = %ServiceId%, 0x2, SrvInstSection
+
+
+
+[SrvInstSection]
+
+DisplayName = %ServiceName%
+ServiceType = %SERVICE_KERNEL_DRIVER%
+StartType = %SERVICE_DEMAND_START%
+ErrorControl = %SERVICE_ERROR_NORMAL%
+ServiceBinary = %12%\%DriverFile%
+
+
+
+;#####################################################################
+;
+; Registry data
+; =============
+;
+;#####################################################################
+
+
+
+[DevInst.AddReg]
+
+HKR, , AssociatedFilters, , "wdmaud,redbook"
+;HKR, , SetupPreferredAudioDevices, 3, 01, 00, 00, 00
+HKR, , Driver, , %DriverFile%
+
+HKR, Drivers, SubClasses, , "wave,mixer"
+
+HKR, Drivers\wave\wdmaud.drv, Driver, , wdmaud.drv
+HKR, Drivers\mixer\wdmaud.drv, Driver, , wdmaud.drv
+
+HKR, Drivers\wave\wdmaud.drv, Description, , %DeviceName%
+HKR, Drivers\mixer\wdmaud.drv, Description, , %DeviceName%
+
+
+
+[DevInst.Properties]
+
+DeviceBrandingIcon, , , , "%12%\%DriverFile%, -101"
+DeviceVendorWebSite, , , , %VendorSite%
+
+
+
+;#####################################################################
+;
+; Files
+; =====
+;
+;#####################################################################
+
+
+
+[SourceDisksNames]
+
+222 = %DiskName%, "", 222
+
+
+
+[SourceDisksFiles.x86]
+
+vrtaucbl.sys = 222, \x86
+
+
+
+[SourceDisksFiles.amd64]
+
+vrtaucbl.sys = 222, \x64
+
+
+
+[SourceDisksFiles.arm64]
+
+vrtaucbl.sys = 222, \arm64
+
+
+
+[DestinationDirs]
+
+DevInst.DriverModules = 12
+
+
+
+[DevInst.DriverModules]
+
+vrtaucbl.sys
+
+
+
+
+;#####################################################################
+;
+; Strings
+; =======
+;
+;#####################################################################
+
+
+
+[Strings]
+
+VendorName = "Eugene Muzychenko"
+VendorSite = "https://software.muzychenko.net"
+DeviceName = "Virtual Audio Cable"
+HardwareId = "VirtualAudioCable_83ed7f0e-2028-4956-b0b4-39c76fdaef1d"
+ServiceName = "Virtual Audio Cable service"
+ServiceId = "VirtualAudioCable_83ed7f0e-2028-4956-b0b4-39c76fdaef1d"
+DriverFile = "vrtaucbl.sys"
+DiskName = "Virtual Audio Cable Driver Disk"
+
+SERVICE_KERNEL_DRIVER = 1
+SERVICE_DEMAND_START = 3
+SERVICE_ERROR_NORMAL = 1

@@ -1,0 +1,151 @@
+
+Virtual Audio Cable Software Product License Agreement
+
+All exclusive rights to this Software Product remains the property of the
+Author, Eugene V. Muzychenko. Use of this software is allowed only upon
+agreement of this license. The Author (here in after refereed to as the
+Licensor) grants you (here in after refereed as the Licensee) a
+non-exclusive license to use this software in accordance with the terms of
+this agreement.
+
+
+
+1. Conclusion and termination of this Agreement
+
+- The Licensee is deemed to have concluded this agreement when the
+Licensee copies part or the whole of this software, or when the
+Licensee starts to use the program included in this software. Here, use
+of the program refers to executing the program executable files on a PC.
+
+
+- This agreement may be terminated by the Licensee at any time.
+
+- All instances of this software shall be erased upon termination of this
+agreement.
+
+
+
+2. Rights and obligations
+
+- Feature-limited FREEWARE (lite) version of this software can be used only
+in a private home environment that is not associated with income
+generation.
+
+- TRIAL version of this software can be used anywhere to evaluate product
+functionality. Explicit commercial usage is prohibited.
+
+- FULL version acquired under the HOME license can be used only in a
+private home environment that is not associated with income generation.
+
+- FULL version acquired under the BUSINESS license is permitted for any
+kind of commercial usage.
+
+- Each copy of the FULL version can be distributed only together with its
+lawfully obtained license.
+
+- Audio Repeater application included in the distribution package, can be
+used freely, even without installing entire VAC Product.
+
+- The Licensee is permitted to distribute FREEWARE (lite) or TRIAL versions
+of this software in accordance with the following terms:
+
+(1) The Licensee cannot modify content and structure of this software.
+However, the Licensee may compress/archive this software if it can be
+unpacked using commonly used methods.
+
+(2) The Licensee cannot profit from provision of this software to third
+parties. However, TRIAL version of this software can be freely distributed
+together with another product, including commercial ones.
+
+- For the FULL version, a lawfully obtained software copy can be used in
+accordance with the following terms:
+
+(1) one HOME license covers product installations and running instances on
+all computers inside the same home;
+
+(2) one BUSINESS license covers a single running instance, either on a real
+or virtual machine. Thus, number of instances running at the same time must
+not exceed number of licenses acquired.
+
+The "running instance" means VAC driver that transfers audio streams
+through Virtual Cables. If there are no active streams (Virtual Cable
+devices are not used), there are no running instances in the system.
+
+Copies of FULL version distribution package can be made for backup purposes
+only.
+
+
+License transfer rights:
+
+- The owner of a lawfully purchased license(s) to the FULL version is
+permitted to transfer (not to replicate) it (them) to a third party
+(parties). In such case, the third party becomes a new Licensee, and must
+accept this Agreement.
+
+- Every license or a license pack (a volume) purchased with a discount, can
+only be tranfserred under the same terms and conditions as it was acquired.
+A license pack can only be transferred only in its entirety, licenses with
+targeted discounts can only be transferred to the entities entitled for
+such discounts, etc.
+
+- After the license is transferred, the previous Licensee loses all rights
+to the FULL version, ceases to be a Licensee, and cannot retain any copies
+of the FULL version.
+
+
+
+3. Support policy
+
+The Licensor provides TECHNICAL support for the Software Product. The
+"technical support" term means analysing technical details of Product
+functionality in a particular computer environment, and solving related
+technical problems.
+
+Technical support is provided free of charge for all cases when the Product
+works not as described in the documentation, within one year from the date
+of purchase of the Product license.
+
+Technical support does not assume training in Product usage (sole or
+together with three-party software), operating system or general
+computer usage.
+
+The user should consult the documentation before asking for support.
+
+Support requests can be written in English or Russian. Requests can be
+processed up to 3 business days.
+
+For user requests not related to incorrect Product functioning and/or
+issued after one-year period, additional processing time and/or payment
+may be required.
+
+Upgrades/downgrades within the same major product version (the first number
+of the numeric version representation) are provided freely within three
+years from the date of purchase of the Product license.
+
+
+
+4. Refund policy
+
+Refunds are possible only if ALL conditions listed below are met:
+
+- The software is installed and used exactly as described.
+
+- The software works not as described and some of its key features
+listed in the documentation are not supported.
+
+- There is no workaround to make the software working properly.
+
+
+
+5. Liability
+
+This software is distributed "as is". The Licensor does his best to ensure
+reliable and safe operation of his software, but no warranty of any kind is
+expressed or implied. You use the software at your own risk. The Licensor
+will not be liable for data loss, damages, loss of profits or any other
+kind of loss while using or misusing this software. In any case, the
+Licensor's liability may not exceed the amount paid by the Licensee.
+
+
+
+Version from August 20, 2020.
